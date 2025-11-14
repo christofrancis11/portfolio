@@ -9,10 +9,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background Elements -->
+    <div class="bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#hero">CF</a>
+            <a class="navbar-brand" href="#hero">
+                <img src="christo-photo.jpg" alt="Christo Francis" class="navbar-logo">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,30 +43,32 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="container text-center">
-            <img src="Christo.jpg" alt="Christo Francis" class="profile-img mb-4">
-            <h1 class="display-4 mb-3">Christo Francis</h1>
-            <p class="lead mb-4">Python & Web Development Enthusiast</p>
-            <div class="social-links mb-4">
-                <a href="https://linkedin.com/in/christofrancis" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:christofrancisparamel@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+917592054723"><i class="fas fa-phone"></i></a>
+            <img src="christo-photo.jpg" alt="Christo Francis" class="profile-img mb-4" data-aos="zoom-in">
+            <h1 class="display-4 mb-3" data-aos="fade-up" data-aos-delay="200">Christo Francis</h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="400">Python & Web Development Enthusiast</p>
+            <div class="social-links mb-4" data-aos="fade-up" data-aos-delay="600">
+                <a href="https://linkedin.com/in/christofrancis" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:christofrancisparamel@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+917592054723" class="social-icon"><i class="fas fa-phone"></i></a>
+                <a href="https://github.com/christofrancis11" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
             </div>
-            <a href="#contact" class="btn btn-primary-custom btn-lg">Get In Touch</a>
+
+            <a href="#contact" class="btn btn-primary-custom btn-lg" data-aos="fade-up" data-aos-delay="800">Get In Touch</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2 class="text-center section-title">About Me</h2>
+            <h2 class="text-center section-title" data-aos="fade-up">About Me</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="lead">Information Technology undergraduate with hands-on experience in web and app development, IoT systems, and digital platforms. I demonstrate strong problem-solving, adaptability, and communication skills, with a passion for applying technical knowledge to real-world projects.</p>
-                    <p>Currently pursuing B.Voc in Information Technology at Christ College (Autonomous), Irinjalakuda, I'm eager to contribute to innovation-driven roles in IT.</p>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">Information Technology undergraduate with hands-on experience in web and app development, IoT systems, and digital platforms. I demonstrate strong problem-solving, adaptability, and communication skills, with a passion for applying technical knowledge to real-world projects.</p>
+                    <p data-aos="fade-up" data-aos-delay="200">Currently pursuing B.Voc in Information Technology at Christ College (Autonomous), Irinjalakuda, I'm eager to contribute to innovation-driven roles in IT.</p>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
                     <h4><i class="fas fa-graduation-cap text-primary"></i> Education</h4>
                     <div class="timeline-item">
                         <h5>B.Voc in Information Technology</h5>
@@ -70,14 +83,14 @@
                         <p class="text-muted">Carmel HSS Chalakudy<br>2020-2021 | GPA: 9.9</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
                     <h4><i class="fas fa-certificate text-primary"></i> Certifications</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle text-success"></i> Workshop on Immersive Technologies (AR & VR)</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success"></i> UI/UX Mega Workshop using Figma</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success"></i> Model Context Protocol Workshop</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success"></i> Web Designing with HTML</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success"></i> Introduction to Ethical Hacking</li>
+                        <li class="mb-2 cert-item"><i class="fas fa-check-circle text-success"></i> Web Designing with HTML</li>
+                        <li class="mb-2 cert-item"><i class="fas fa-check-circle text-success"></i> Introduction to Ethical Hacking</li>
+                        <li class="mb-2 cert-item"><i class="fas fa-check-circle text-success"></i> Workshop on Immersive Technologies (AR & VR)</li>
+                        <li class="mb-2 cert-item"><i class="fas fa-check-circle text-success"></i> UI/UX Mega Workshop using Figma</li>
+                        <li class="mb-2 cert-item"><i class="fas fa-check-circle text-success"></i> Model Context Protocol Workshop</li>
                     </ul>
                 </div>
             </div>
@@ -87,59 +100,71 @@
     <!-- Skills Section -->
     <section id="skills" class="bg-light-custom">
         <div class="container">
-            <h2 class="text-center section-title">Technical Skills</h2>
+            <h2 class="text-center section-title" data-aos="fade-up">Technical Skills</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card skill-card h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            </div>
                             <h5 class="card-title">Web Development</h5>
                             <p class="card-text">HTML, CSS, JavaScript<br>Bootstrap, Responsive Design</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card skill-card h-100">
                         <div class="card-body text-center">
-                            <i class="fab fa-python fa-3x text-primary mb-3"></i>
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-python fa-3x text-primary mb-3"></i>
+                            </div>
                             <h5 class="card-title">Programming</h5>
                             <p class="card-text">Python, C, R<br>Data Structures & Algorithms</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
                     <div class="card skill-card h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-microchip fa-3x text-primary mb-3"></i>
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-paint-brush fa-3x text-primary mb-3"></i>
+                            </div>
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Figma, Adobe Suite<br>Canva, Photoshop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-microchip fa-3x text-primary mb-3"></i>
+                            </div>
                             <h5 class="card-title">IoT & Embedded</h5>
                             <p class="card-text">Arduino, Raspberry Pi<br>ESP32, IoT Systems</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="card skill-card h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            </div>
                             <h5 class="card-title">Database Management</h5>
                             <p class="card-text">MySQL, MongoDB<br>Database Design & Queries</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
                     <div class="card skill-card h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            </div>
                             <h5 class="card-title">Data Analytics</h5>
                             <p class="card-text">NumPy, Pandas<br>Power BI, Tableau, SPSS</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card skill-card h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-paint-brush fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">UI/UX Design</h5>
-                            <p class="card-text">Figma, Adobe Suite<br>Canva, Photoshop</p>
                         </div>
                     </div>
                 </div>
@@ -150,29 +175,43 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 class="text-center section-title">Featured Projects</h2>
+            <h2 class="text-center section-title" data-aos="fade-up">Featured Projects</h2>
             <div class="row">
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card project-card">
+                        <div class="project-overlay">
+                            <div class="project-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-lock text-primary"></i> Securo</h5>
                             <h6 class="card-subtitle mb-2 text-muted">File Encrypting and Decrypting Software</h6>
                             <p class="card-text">Developed a secure file encryption and decryption software using advanced algorithms to ensure data security and privacy. Implemented robust cryptographic techniques for protecting sensitive information.</p>
-                            <span class="badge badge-primary">Python</span>
-                            <span class="badge badge-secondary">Cryptography</span>
-                            <span class="badge badge-info">Security</span>
+                            <div class="badge-container">
+                                <span class="badge badge-primary">Python</span>
+                                <span class="badge badge-secondary">Cryptography</span>
+                                <span class="badge badge-info">Security</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card project-card">
+                        <div class="project-overlay">
+                            <div class="project-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-eye text-primary"></i> Glance Talk</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Eye-tracking Communication System</h6>
                             <p class="card-text">Designed an Arduino-based eye-tracking IoT system that enables paralyzed individuals to communicate via a smart board. This assistive technology project demonstrates practical application of IoT for social impact.</p>
-                            <span class="badge badge-primary">Arduino</span>
-                            <span class="badge badge-secondary">IoT</span>
-                            <span class="badge badge-info">Assistive Tech</span>
+                            <div class="badge-container">
+                                <span class="badge badge-primary">Arduino</span>
+                                <span class="badge badge-secondary">IoT</span>
+                                <span class="badge badge-info">Assistive Tech</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -183,20 +222,20 @@
     <!-- Experience Section -->
     <section id="experience" class="bg-light-custom">
         <div class="container">
-            <h2 class="text-center section-title">Work Experience</h2>
+            <h2 class="text-center section-title" data-aos="fade-up">Work Experience</h2>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <div class="timeline-item">
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
                         <h5>Freelance Frontend Web Developer</h5>
                         <p class="text-muted">March 2025 - Present</p>
                         <p>Developed and deployed portfolio websites and event registration platforms using HTML, CSS, and JavaScript. Delivered responsive, user-friendly solutions for diverse clients.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
                         <h5>Freelance Graphic Designer</h5>
                         <p class="text-muted">August 2024 - Present</p>
                         <p>Designed creative branding materials, posters, and digital assets for clients using Canva, Adobe Photoshop, and Illustrator. Created visually compelling designs that align with client brand identities.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
                         <h5>IoT Workshop Instructor</h5>
                         <p class="text-muted">St. Joseph HSS Meloor, Thrissur | November 2024</p>
                         <p>Led a 3-day IoT Project Development Workshop, guiding students through practical sessions on IoT concepts and applications. Facilitated hands-on learning experiences with embedded systems.</p>
@@ -204,19 +243,19 @@
                 </div>
             </div>
             
-            <h3 class="text-center mt-5 mb-4">Volunteer Experience</h3>
+            <h3 class="text-center mt-5 mb-4" data-aos="fade-up">Volunteer Experience</h3>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-hands-helping text-primary"></i> Volunteer - Synapse Fest 2025</li>
-                        <li class="mb-2"><i class="fas fa-photo-video text-primary"></i> Media Coordinator - Phoenix'25 Fest</li>
-                        <li class="mb-2"><i class="fas fa-film text-primary"></i> Media Wing - Celluloid Film Carnival</li>
+                        <li class="mb-2 volunteer-item"><i class="fas fa-hands-helping text-primary"></i> Volunteer - Synapse Fest 2025</li>
+                        <li class="mb-2 volunteer-item"><i class="fas fa-photo-video text-primary"></i> Media Coordinator - Phoenix'25 Fest</li>
+                        <li class="mb-2 volunteer-item"><i class="fas fa-film text-primary"></i> Media Wing - Celluloid Film Carnival</li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-laptop-code text-primary"></i> Media Wing - Zephyrus Tech Fest</li>
-                        <li class="mb-2"><i class="fas fa-users text-primary"></i> NSS Media Wing Leader - St. George's HSS</li>
+                        <li class="mb-2 volunteer-item"><i class="fas fa-laptop-code text-primary"></i> Media Wing - Zephyrus Tech Fest</li>
+                        <li class="mb-2 volunteer-item"><i class="fas fa-users text-primary"></i> NSS Media Wing Leader - St. George's HSS</li>
                     </ul>
                 </div>
             </div>
@@ -226,31 +265,42 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2 class="text-center section-title">Get In Touch</h2>
+            <h2 class="text-center section-title" data-aos="fade-up">Get In Touch</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="row text-center">
-                        <div class="col-md-4 mb-4">
-                            <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
-                            <h5>Email</h5>
-                            <p><a href="mailto:christofrancisparamel@gmail.com">christofrancisparamel@gmail.com</a></p>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-item">
+                                <a href="mailto:christofrancisparamel@gmail.com">
+                                    <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                                </a>
+                                <h5>Email</h5>
+                            </div>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <i class="fas fa-phone fa-3x text-primary mb-3"></i>
-                            <h5>Phone</h5>
-                            <p><a href="tel:+917592054723">+91 7592054723</a></p>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-item">
+                                <a href="tel:+917592054723">
+                                    <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                                </a>
+                                <h5>Phone</h5>
+                                <p></a></p>
+                            </div>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
-                            <h5>Location</h5>
-                            <p>Thrissur, Kerala</p>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="contact-item">
+                                <a href="https://wa.me/917592054723" target="_blank">
+                                    <i class="fab fa-whatsapp fa-3x text-primary mb-3"></i>
+                                </a>
+                                <h5>WhatsApp</h5>
+                            </div>
                         </div>
+
                     </div>
-                    <div class="text-center mt-4">
-                        <a href="https://linkedin.com/in/christofrancis" target="_blank" class="btn btn-outline-primary mx-2">
+                    <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+                        <a href="https://linkedin.com/in/christofrancis" target="_blank" class="btn btn-outline-primary mx-2 btn-animated">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
-                        <a href="mailto:christofrancisparamel@gmail.com" class="btn btn-outline-primary mx-2">
+                        <a href="mailto:christofrancisparamel@gmail.com" class="btn btn-outline-primary mx-2 btn-animated">
                             <i class="fas fa-envelope"></i> Send Email
                         </a>
                     </div>
@@ -263,7 +313,6 @@
     <footer class="text-center">
         <div class="container">
             <p class="mb-2">&copy; 2025 Christo Francis. All Rights Reserved.</p>
-            <p class="mb-0">Designed & Developed  by Christo Francis</p>
         </div>
     </footer>
 
@@ -294,6 +343,47 @@
                     document.querySelector('.navbar-toggler').click();
                 }
             });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with data-aos attribute
+        document.querySelectorAll('[data-aos]').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Add stagger effect to certification items
+        const certItems = document.querySelectorAll('.cert-item');
+        certItems.forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Add stagger effect to volunteer items
+        const volunteerItems = document.querySelectorAll('.volunteer-item');
+        volunteerItems.forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.1}s`;
         });
     </script>
 </body>
